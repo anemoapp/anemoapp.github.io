@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Anemo</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet' href='https://vjs.zencdn.net/5-unsafe/video-js.css'>
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="assets/vendor/css/cursor.css">
+
+		<link rel="stylesheet" href="assets/css/student.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="sidebar">
+				<a href="index.html">
+					<span class="logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(90, 149, 253, 1);transform:;-ms-filter:"><path d="M6.012,18H19h1h1v-1v-2V4c0-1.103-0.897-2-2-2H6C4.794,2,3,2.799,3,5v11v1v2c0,2.201,1.794,3,3,3h15v-2H6.012 C5.55,19.988,5,19.806,5,19c0-0.101,0.009-0.191,0.024-0.273C5.136,18.151,5.608,18.01,6.012,18z M8.648,7.642 c0.875-0.855,2.255-0.855,3.125,0l0.224,0.219l0.223-0.219c0.871-0.855,2.251-0.855,3.126,0c0.871,0.859,0.871,2.215,0,3.069 L11.998,14l-3.349-3.289C7.777,9.856,7.777,8.501,8.648,7.642z"></path></svg>
+					</span>
+				</a>
+
+				<a class="logo-expand" href="index.html">
+					<i class='bx bxs-book-heart'></i>Anemo
+				</a>
+				<div class="side-wrapper">
+					<div class="side-title">MENU</div>
+
+					<div class="side-menu">
+						<a class="sidebar-link discover is-active" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M21.743,12.331l-9-10c-0.379-0.422-1.107-0.422-1.486,0l-9,10c-0.265,0.293-0.331,0.715-0.17,1.076 C2.247,13.768,2.605,14,3,14h2v7c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1v-4h4v4c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1v-7h2 c0.395,0,0.753-0.232,0.913-0.593C22.074,13.046,22.008,12.625,21.743,12.331z"></path></svg>
+							Browse
+						</a>
+						<a class="sidebar-link classes" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M4 6H6V8H4zM4 11H6V13H4zM4 16H6V18H4zM20 8L20 6 18.8 6 9.2 6 8.023 6 8.023 8 9.2 8 18.8 8zM8 11H20V13H8zM8 16H20V18H8z"></path></svg>
+							My Classes
+						</a>
+						<a class="sidebar-link" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M21.947,9.179c-0.129-0.378-0.47-0.645-0.868-0.676L15.378,8.05l-2.467-5.461C12.75,2.23,12.393,2,12,2 s-0.75,0.23-0.911,0.588L8.622,8.05L2.921,8.503C2.53,8.534,2.193,8.791,2.06,9.16s-0.039,0.782,0.242,1.056l4.213,4.107 l-1.49,6.452c-0.092,0.399,0.069,0.814,0.406,1.047C5.603,21.94,5.801,22,6,22c0.193,0,0.387-0.056,0.555-0.168L12,18.202 l5.445,3.63c0.348,0.232,0.805,0.223,1.145-0.024c0.338-0.247,0.487-0.68,0.372-1.082l-1.829-6.4l4.536-4.082 C21.966,9.976,22.075,9.558,21.947,9.179z"></path></svg>
+							Favourites
+						</a>
+						<a class="sidebar-link" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M19,4h-2V2h-2v2H9V2H7v2H5C3.897,4,3,4.897,3,6v14c0,1.103,0.897,2,2,2h14c1.103,0,2-0.897,2-2V6C21,4.897,20.103,4,19,4z M18,19h-6v-6h6V19z M19,9H5V7h14V9z"></path></svg>
+							Calendar
+						</a>
+						<a class="sidebar-link" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M4,18h1h1v4.081L11.101,18H12h4c1.103,0,2-0.897,2-2V8c0-1.103-0.897-2-2-2H4C2.897,6,2,6.897,2,8v8 C2,17.103,2.897,18,4,18z"></path><path d="M20,2h-1h-2.002H9H8C6.897,2,6,2.897,6,4h3h7.586H18c1.103,0,2,0.897,2,2v1.414V11v3c1.103,0,2-0.897,2-2v-1V7V5V4 C22,2.897,21.103,2,20,2z"></path></svg>
+							Support
+						</a>
+					</div>
+				</div>
+				<div class="side-wrapper">
+					<!-- <div class="side-title">CATEGORY</div> -->
+					<div class="side-menu">
+						<a class="sidebar-link trending" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M12,5c-7.633,0-9.927,6.617-9.948,6.684L1.946,12l0.105,0.316C2.073,12.383,4.367,19,12,19s9.927-6.617,9.948-6.684 L22.054,12l-0.105-0.316C21.927,11.617,19.633,5,12,5z M12,16c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S14.206,16,12,16z"></path><path d="M12,10c-1.084,0-2,0.916-2,2s0.916,2,2,2s2-0.916,2-2S13.084,10,12,10z"></path></svg>
+							Live Stream
+						</a>
+						<a class="sidebar-link" href="community.html">
+							<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4S7.294 12 9.5 12zM11 13H8c-3.309 0-6 2.691-6 6v1h1 1 11 1 1v-1C17 15.691 14.309 13 11 13z"></path><path d="M16.604,11.048c0.604-1.029,0.872-2.228,0.751-3.44c-0.179-1.784-1.175-3.361-2.803-4.44l-1.105,1.666 c1.119,0.742,1.8,1.799,1.918,2.974c0.11,1.105-0.28,2.194-1.072,2.986l-1.192,1.192l1.618,0.475C18.951,13.701,19,17.957,19,18h2 C21,16.211,20.044,12.715,16.604,11.048z"></path></svg>
+							Community
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrapper">
+				<div class="header">
+					<div class="search-bar">
+						<input type="text" class="input-search" placeholder="Search">
+					</div>
+					<div class="user-settings">
+						<img class="user-img" src="assets/img/profile_img.jpg" alt="">
+						
+						<div class="user-name">Julia</div>
+						
+						<svg viewBox="0 0 492 492" fill="currentColor">
+							<path d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z"></path>
+						</svg>
+						<div class="message">
+							<svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 24 24" style="fill:rgba(71, 65, 87, 1);transform:;-ms-filter:"><path d="M20,4H4C2.896,4,2,4.896,2,6v12c0,1.104,0.896,2,2,2h16c1.104,0,2-0.896,2-2V6C22,4.896,21.104,4,20,4z M20,8.7l-8,5.334 L4,8.7V6.297l8,5.333l8-5.333V8.7z"></path></svg>
+						</div>
+						<div class="notify">
+							<div class="notification"></div>
+							<svg viewBox="0 0 24 24" fill="currentColor">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.707 8.796c0 1.256.332 1.997 1.063 2.85.553.628.73 1.435.73 2.31 0 .874-.287 1.704-.863 2.378a4.537 4.537 0 01-2.9 1.413c-1.571.134-3.143.247-4.736.247-1.595 0-3.166-.068-4.737-.247a4.532 4.532 0 01-2.9-1.413 3.616 3.616 0 01-.864-2.378c0-.875.178-1.682.73-2.31.754-.854 1.064-1.594 1.064-2.85V8.37c0-1.682.42-2.781 1.283-3.858C7.861 2.942 9.919 2 11.956 2h.09c2.08 0 4.204.987 5.466 2.625.82 1.054 1.195 2.108 1.195 3.745v.426zM9.074 20.061c0-.504.462-.734.89-.833.5-.106 3.545-.106 4.045 0 .428.099.89.33.89.833-.025.48-.306.904-.695 1.174a3.635 3.635 0 01-1.713.731 3.795 3.795 0 01-1.008 0 3.618 3.618 0 01-1.714-.732c-.39-.269-.67-.694-.695-1.173z" />
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-container">
+					<div class="main-header anim" style="--delay: 0s">Recommended For You</div>
+					
+					<div class="main-blogs">
+						<div class="main-blog anim" style="--delay: .1s">
+							<div class="main-blog__title">Creative Writing: Crafting Personal Essays With Impact</div>
+							<div class="main-blog__author">
+								<div class="author-img__wrapper">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+										<path d="M20 6L9 17l-5-5" />
+									</svg>
+									<img class="author-img" src="assets/img/olimpia.jpg" />
+								</div>
+								<div class="author-detail">
+									<div class="author-name">Olimpia Froese</div>
+									<div class="author-info">14K Students <span class="seperate"></span>Today</div>
+								</div>
+							</div>
+							<div class="main-blog__time">2 hour 23 minutes</div>
+						</div>
+						<div class="main-blog anim" style="--delay: .2s">
+							<div class="main-blog__title">Animaition for Illustration: Adding Movement with Krita</div>
+							<div class="main-blog__author tips">
+								<div class="main-blog__time">1 hour 5 minutes</div>
+								<div class="author-img__wrapper">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+										<path d="M20 6L9 17l-5-5" />
+									</svg>
+									<img class="author-img" src="assets/img/profile2.jpg" />
+								</div>
+								<div class="author-detail">
+									<div class="author-name">Frank Gannon</div>
+									<div class="author-info">53K Students <span class="seperate"></span>2 weeks ago</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="small-header anim" style="--delay: .3s">My Classes</div>
+					<div class="videos">
+						<div class="video anim" style="--delay: .4s">
+							<div class="video-time">8 min</div>
+							<div class="video-wrapper">
+								<video muted="">
+									<source src="assets/videos/video4.mp4">
+								</video>
+								<div class="author-img__wrapper video-author">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+										<path d="M20 6L9 17l-5-5" />
+									</svg>
+									<img class="author-img" src="assets/img/profile3.jpg" />
+								</div>
+							</div>
+							<div class="video-by">Andy William</div>
+							<div class="video-name">Basic how to administrate local server</div>
+							<div class="video-view">54K views<span class="seperate video-seperate"></span>1 week ago</div>
+						</div>
+						<div class="video anim" style="--delay: .5s">
+							<div class="video-time">5 min</div>
+							<div class="video-wrapper">
+								<video muted="">
+									<source src="assets/videos/video2.mp4" type="video/mp4">
+								</video>
+								<div class="author-img__wrapper video-author">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+										<path d="M20 6L9 17l-5-5" />
+									</svg>
+									<img class="author-img" src="assets/img/profile4.jpg" />
+								</div>
+							</div>
+							<div class="video-by offline">Gerard Bind</div>
+							<div class="video-name">Responsive HTML Email Development</div>
+							<div class="video-view">42K views<span class="seperate video-seperate"></span>1 week ago</div>
+						</div>
+						<div class="video anim" style="--delay: .6s">
+							<div class="video-time">7 min</div>
+							<div class="video-wrapper">
+								<video muted="">
+									<source src="assets/videos/video3.mp4" type="video/mp4">
+								</video>
+								<div class="author-img__wrapper video-author">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+										<path d="M20 6L9 17l-5-5" />
+									</svg>
+									<img class="author-img" src="assets/img/profile7.jpg" />
+								</div>
+							</div>
+							<div class="video-by offline">John Wise</div>
+							<div class="video-name">Modern CSS: Writing Better, Cleaner, More Scalable Code</div>
+							<div class="video-view">64K views<span class="seperate video-seperate"></span>2 week ago</div>
+						</div>
+						<div class="video anim" style="--delay: .7s">
+							<div class="video-time">6 min</div>
+							<div class="video-wrapper">
+								<video muted="">
+									<source src="assets/videos/video1.mp4" type="video/mp4">
+								</video>
+								<div class="author-img__wrapper video-author">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+										<path d="M20 6L9 17l-5-5" />
+									</svg>
+									<img class="author-img" src="assets/img/profile9.jpg" />
+								</div>
+							</div>
+							<div class="video-by">Budi Hakim</div>
+							<div class="video-name">Complete Web Design: from Figma design to Webflow development</div>
+							<div class="video-view">50K views<span class="seperate video-seperate"></span>1 week ago</div>
+						</div>
+					</div>
+
+					<!-- My Classes Block -->
+					<div class="class-area">
+						<div class="video-class">
+							<video id="my_video_1" class="video-js vjs-default-skin anim" width="640px" height="267px" controls preload="none" poster='assets/img/cover3.jpg' data-setup='{ "aspectRatio":"940:620", "playbackRates": [1, 1.5, 2] }'>	
+								<source src="assets/videos/video7.mp4" type='video/mp4'>
+							</video>
+							<div class="video-detail">
+								<div class="video-content">
+									<div class="video-p-wrapper anim" style="--delay: .1s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+												<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile3.jpg" />
+										</div>
+										<div class="video-p-detail">
+											<div class="video-p-name">James Robertson</div>
+											<div class="video-p-sub">7,956 viewers</div>
+										</div>
+										<div class="button-wrapper">
+											<button class="like">
+												<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.435 2.582a1.933 1.933 0 00-1.93-.503L3.408 6.759a1.92 1.92 0 00-1.384 1.522c-.142.75.355 1.704 1.003 2.102l5.033 3.094a1.304 1.304 0 001.61-.194l5.763-5.799a.734.734 0 011.06 0c.29.292.29.765 0 1.067l-5.773 5.8c-.428.43-.508 1.1-.193 1.62l3.075 5.083c.36.604.98.946 1.66.946.08 0 .17 0 .251-.01.78-.1 1.4-.634 1.63-1.39l4.773-16.075c.21-.685.02-1.43-.48-1.943z" />
+												</svg>
+												Share
+											</button>
+											<button class="like add">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M19,4h-2V2h-2v2H9V2H7v2H5C3.897,4,3,4.897,3,6v14c0,1.103,0.897,2,2,2h14c1.103,0,2-0.897,2-2V6C21,4.897,20.103,4,19,4z M18,19h-6v-6h6V19z M19,9H5V7h14V9z"></path></svg>
+												Add to Calendar
+											</button>
+											<button class="like red save">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M19,22V10V9V4c0-1.103-0.897-2-2-2H7C5.897,2,5,2.897,5,4v5v1v12l7-4.666L19,22z M8.006,8.056 c0-0.568,0.224-1.083,0.585-1.456c0.361-0.372,0.86-0.603,1.412-0.603c0,0,0.996-0.003,1.997,1.029 c1.001-1.032,1.997-1.029,1.997-1.029c0.552,0,1.051,0.23,1.412,0.603c0.361,0.373,0.585,0.888,0.585,1.456 s-0.224,1.084-0.585,1.456L12,13.203L8.591,9.512C8.229,9.14,8.006,8.624,8.006,8.056z"></path></svg>
+												Save
+											</button>
+										</div>
+									</div>
+									<div class="video-p-title anim" style="--delay: .2s">Modern CSS: Writing Better, Cleaner, More Scalable Code</div>
+									<div class="video-p-subtitle anim" style="--delay: .3s">Looking to write clean, sustainable, and scalable CSS? Learn a new methodology for easier, more flexible code!</div>
+									<div class="video-p-subtitle anim" style="--delay: .4s">You've never seen CSS like this before. No matter your experience, you'll walk away with new tactics and techniques for crafting sustainable, scalable code with ease. After taking this class, you'll never write CSS the same way again.</div>
+								</div>
+							</div>
+						</div>
+						<div class="class-list">
+							<div class="list">
+								<div class="list-header anim">
+									7 Lessons<span>40 minutes</span>
+								</div>
+								<div class="list-container">
+									<div class="item anim" style="--delay: .1s">
+										<div class="itm-wrapper">
+											<div class="itm__name video-p-name lesson">1. Introduction</div>
+										</div>
+									</div>
+									<div class="item anim" style="--delay: .1s">
+										<div class="itm-wrapper">
+											<div class="itm__name video-p-name lesson">2. The Problems With CSS</div>
+										</div>
+									</div>
+									<div class="item anim" style="--delay: .1s">
+										<div class="itm-wrapper">
+											<div class="itm__name video-p-name lesson">3. CSS without ITCSS</div>
+										</div>
+									</div>
+									<div class="item anim" style="--delay: .1s">
+										<div class="itm-wrapper">
+											<div class="itm__name video-p-name lesson">4. Specificity Wars</div>
+										</div>
+									</div>
+									<div class="item anim" style="--delay: .1s">
+										<div class="itm-wrapper">
+											<div class="itm__name video-p-name lesson">5. The Three Sides of ITCSS</div>
+										</div>
+									</div>
+									<div class="item anim" style="--delay: .1s">
+										<div class="itm-wrapper">
+											<div class="itm__name video-p-name lesson">6. ITCSS in Practice</div>
+										</div>
+									</div>
+									<div class="item anim" style="--delay: .1s">
+										<div class="itm-wrapper">
+											<div class="itm__name video-p-name lesson">7. Final Thoughts</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="list-vid__container">
+								<div class="list-vid__title anim" style="--delay: .3s">Related Videos</div>
+								<div class="list-vid anim" style="--delay: .4s">
+									<div class="list-vid__wrapper">
+										<img class="list-vid__img" src="assets/img/cover1.jpg" />
+										<div class="list-vid__content">
+											<div class="list-vid__name">CSS Essentials: Getting Started with CSS Grid</div>
+											<div class="list-vid__by">Harry Roberts</div>
+											<div class="list-vid__info">17,302 views <span class="seperate"></span>2 days ago</div>
+										</div>
+									</div>
+								</div>
+								<div class="list-vid anim" style="--delay: .5s">
+									<div class="list-vid__wrapper">
+										<img class="list-vid__img" src="assets/img/cover2.jpg" />
+										<div class="list-vid__content">
+											<div class="list-vid__name">Coding For Beginners 2: Get Started With Web Development!</div>
+											<div class="list-vid__by">Kevin Sidwar</div>
+											<div class="list-vid__info">21,047 views <span class="seperate"></span>2 days ago</div>
+										</div>
+									</div>
+								</div>
+								<div class="list-vid__button anim" style="--delay: .6s">See All related videos (14)</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="stream-area">
+						<div class="video-stream">
+							<video id="my_video_1" class="video-js vjs-default-skin anim" width="640px" height="267px" controls preload="none" poster='assets/img/big-data.jpg' data-setup='{ "aspectRatio":"940:620", "playbackRates": [1, 1.5, 2] }'>	
+								<source src="assets/videos/video2.mp4" type='video/mp4'>
+							</video>
+							<div class="video-detail">
+								<div class="video-content">
+									<div class="video-p-wrapper anim" style="--delay: .1s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+												<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile10.jpg" />
+										</div>
+										<div class="video-p-detail">
+											<div class="video-p-name">James Brown</div>
+											<div class="video-p-sub">12,394 viewers</div>
+										</div>
+										<div class="button-wrapper">
+											<button class="like">
+												<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.435 2.582a1.933 1.933 0 00-1.93-.503L3.408 6.759a1.92 1.92 0 00-1.384 1.522c-.142.75.355 1.704 1.003 2.102l5.033 3.094a1.304 1.304 0 001.61-.194l5.763-5.799a.734.734 0 011.06 0c.29.292.29.765 0 1.067l-5.773 5.8c-.428.43-.508 1.1-.193 1.62l3.075 5.083c.36.604.98.946 1.66.946.08 0 .17 0 .251-.01.78-.1 1.4-.634 1.63-1.39l4.773-16.075c.21-.685.02-1.43-.48-1.943z" />
+												</svg>
+												Share
+											</button>
+											<button class="like red">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(255, 255, 255, 1);transform:;-ms-filter:"><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.186,12.74L12,16.926L7.814,12.74 c-1.089-1.088-1.089-2.813,0-3.907c1.094-1.088,2.818-1.088,3.906,0L12,9.112l0.279-0.279c1.088-1.088,2.813-1.088,3.906,0 C17.274,9.927,17.274,11.651,16.186,12.74z"></path></svg>
+												Like
+											</button>
+										</div>
+									</div>
+									<div class="video-p-title anim" style="--delay: .2s">How to manage local server</div>
+									<div class="video-p-subtitle anim" style="--delay: .3s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus illum tempora consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis earum velit accusantium maiores qui sit quas, laborum voluptatibus vero quidem tempore facilis voluptate tempora deserunt! </div>
+									<div class="video-p-subtitle anim" style="--delay: .4s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum qui dolorum fugiat eius accusantium repellendus illum tempora consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+								</div>
+							</div>
+						</div>
+						<div class="chat-stream">
+							<div class="chat">
+								<div class="chat-header anim">Live Chat<span>
+									<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.212 7.762c0 2.644-2.163 4.763-4.863 4.763-2.698 0-4.863-2.119-4.863-4.763C4.486 5.12 6.651 3 9.35 3c2.7 0 4.863 2.119 4.863 4.762zM2 17.917c0-2.447 3.386-3.06 7.35-3.06 3.985 0 7.349.634 7.349 3.083 0 2.448-3.386 3.06-7.35 3.06C5.364 21 2 20.367 2 17.917zM16.173 7.85a6.368 6.368 0 01-1.137 3.646c-.075.107-.008.252.123.275.182.03.369.048.56.052 1.898.048 3.601-1.148 4.072-2.95.697-2.675-1.35-5.077-3.957-5.077a4.16 4.16 0 00-.818.082c-.036.008-.075.025-.095.055-.025.04-.007.09.019.124a6.414 6.414 0 011.233 3.793zm3.144 5.853c1.276.245 2.115.742 2.462 1.467a2.107 2.107 0 010 1.878c-.531 1.123-2.245 1.485-2.912 1.578a.207.207 0 01-.234-.232c.34-3.113-2.367-4.588-3.067-4.927-.03-.017-.036-.04-.034-.055.002-.01.015-.025.038-.028 1.515-.028 3.145.176 3.747.32z" />
+									</svg>
+									12,394 people
+									</span>
+								</div>
+								<div class="message-container">
+									<div class="message anim" style="--delay: .1s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+											<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile11.jpg" />
+										</div>
+										<div class="msg-wrapper">
+											<div class="msg__name video-p-name">Dylan Brooks</div>
+											<div class="msg__content video-p-sub"> Lorem ipsum clor sit, ame conse quae debitis</div>
+										</div>
+									</div>
+									<div class="message anim" style="--delay: .2s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+											<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile12.jpg" />
+										</div>
+										<div class="msg-wrapper">
+											<div class="msg__name video-p-name offline">Temi Marsh</div>
+											<div class="msg__content video-p-sub"> Suscipit eos atque voluptates labore</div>
+										</div>
+									</div>
+									<div class="message anim" style="--delay: .3s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+												<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile13.jpg" />
+										</div>
+										<div class="msg-wrapper">
+											<div class="msg__name video-p-name offline">Sophia Mura</div>
+											<div class="msg__content video-p-sub">Dicta quidem sunt adipisci</div>
+										</div>
+									</div>
+									<div class="message anim" style="--delay: .4s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+											<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile14.jpg" />
+										</div>
+										<div class="msg-wrapper">
+											<div class="msg__name video-p-name">Jonathan Davis</div>
+											<div class="msg__content video-p-sub"> recusandae doloremque aperiam alias molestias</div>
+										</div>
+									</div>
+									<div class="message anim" style="--delay: .5s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+												<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile15.jpg" />
+										</div>
+										<div class="msg-wrapper">
+											<div class="msg__name video-p-name">Christian Motan</div>
+											<div class="msg__content video-p-sub">Dicta quidem sunt adipisci</div>
+										</div>
+									</div>
+									<div class="message anim" style="--delay: .6s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+												<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile16.jpg" />
+										</div>
+										<div class="msg-wrapper">
+											<div class="msg__name video-p-name offline">Daniel Scott</div>
+											<div class="msg__content video-p-sub"> recusandae doloremque aperiam alias molestias</div>
+										</div>
+									</div>
+									<div class="message anim" style="--delay: .6s">
+										<div class="author-img__wrapper video-author video-p">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+												<path d="M20 6L9 17l-5-5" />
+											</svg>
+											<img class="author-img" src="assets/img/profile17.jpg" />
+										</div>
+										<div class="msg-wrapper">
+											<div class="msg__name video-p-name offline">John Morris</div>
+											<div class="msg__content video-p-sub"> recusandae doloremque aperiam alias molestias</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-footer anim" style="--delay: .1s">
+									<input type="text" class="comment" placeholder="Write your message">
+								</div>
+							</div>
+							<div class="chat-vid__container">
+								<div class="chat-vid__title anim" style="--delay: .3s">Related Videos</div>
+								<div class="chat-vid anim" style="--delay: .4s">
+									<div class="chat-vid__wrapper">
+										<img class="chat-vid__img" src="assets/img/cover1.jpg" />
+										<div class="chat-vid__content">
+											<div class="chat-vid__name">Get started with SASS and improve your CSS workflow</div>
+											<div class="chat-vid__by">Harry Roberts</div>
+											<div class="chat-vid__info">17,302 views <span class="seperate"></span>2 days ago</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-vid anim" style="--delay: .5s">
+									<div class="chat-vid__wrapper">
+										<img class="chat-vid__img" src="assets/img/cover2.jpg" />
+										<div class="chat-vid__content">
+											<div class="chat-vid__name">Programming with Python: Hands-On Introduction for Beginners</div>
+											<div class="chat-vid__by">Kevin Sidwar</div>
+											<div class="chat-vid__info">21,047 views <span class="seperate"></span>2 days ago</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-vid__button anim" style="--delay: .6s">See All related videos (20)</div>
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+
+		<ul class="squares">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		
+		<!-- ==== Creating Custome Cursor ==== -->
+		<div class="cursor"></div>
+		<!-- ==== Custom Cursor End ==== -->
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src='https://vjs.zencdn.net/5-unsafe/video.js'></script>
+
+		<!-- ==== jQuery Library ==== -->
+		<script src="assets/vendor/js/jquery-3.6.0.js"></script>
+		<!-- ==== GreenSock Animation Platform ==== -->
+		<script src="assets/vendor/js/gsap.min.js"></script>
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+		<!-- ==== Main JavaScript File ==== -->
+		<!-- <script src="assets/js/index.js"></script> -->
+		<script src="assets/vendor/js/cursor.js"></script>
+
+		<script  src="assets/js/student.js"></script>
+	</body>
+</html>

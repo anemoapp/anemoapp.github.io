@@ -1,0 +1,12 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+#statuspanel {
+	display: none!important;
+}
+
+#statuspanel-label,
+.statuspanel-label {
+	display: none!important;
+	-moz-appearance: none !important;
+	opacity: .01 !important;
+}
